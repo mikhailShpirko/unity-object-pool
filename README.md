@@ -1,4 +1,4 @@
-# Object Pool
+# Object Pool implementation for Unity
 Implementation of Expandable Object Pool pattern in Unity. Quick and easy to apply to any Unity project.
 I come up to this implementation while developing multiple projects. I decided to share this implementation as I find it efficient and easy to use.
 
