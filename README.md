@@ -65,7 +65,7 @@ gameObject.SetActive(false);
 
 //or if you already saved PoolableObject component to local variable
 cubeFromPool.Disable();
-...
+```
 
 ## QA
 The implementation is covered with Unit Tests. Tests are localted at Assets/Tests. Make sure you enabled Test Runner (Windows > General -> Test Runner)
