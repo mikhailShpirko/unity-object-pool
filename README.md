@@ -5,6 +5,9 @@ I come up to this implementation while developing multiple projects. I decided t
 ## Hot it works
 Object pool will hold configured objects as not active. When object is returned from pool, it will be set as active and put to specified position. When pooled object is disabled it will return itself back to pool. This implementation is efficient if you have multiple conditions when object should be returned to pool (i.e. when object goes out of bounds, object collides enemy, lifetime of the object expired etc.)
 
+## Demo
+The solution includes interactive demo of the pattern. Open Assets/Scenes/Demo to try it out.
+
 ## Setup
 1. Include all scripts from a folder Assets/Scripts/ObjectPool to your project
 2. Configure objects that you are going to use for pooling 
@@ -61,3 +64,6 @@ gameObject.SetActive(false);
 //or if you already saved PoolableObject component to local variable
 cubeFromPool.Disable();
 ...
+
+## QA
+The implementation is covered with Unit Tests. Tests are localted at Assets/Tests. Make sure you enabled Test Runner (Windows > General -> Test Runner)
