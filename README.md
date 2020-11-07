@@ -8,6 +8,8 @@ Object pool will hold configured objects as not active. When object is returned 
 ## Demo
 The solution includes interactive demo of the pattern. Open Assets/Scenes/Demo to try it out.
 
+![alt text](https://github.com/mikhailShpirko/unity-object-pool/blob/main/demo.png)
+
 ## Setup
 1. Include all scripts from a folder Assets/Scripts/ObjectPool to your project
 2. Configure objects that you are going to use for pooling 
