@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+Source: https://github.com/mikhailShpirko/unity-object-pool
+Component: ObjectPool/Pool.cs
+
+The object fills the pool from settings on startup and returns the object from pool upon request.
+
+MIT License
+Copyright (c) 2020 Mikhail Shpirko
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -81,7 +91,7 @@ namespace ObjectPool
             {
                 var poolObjectSetep = _poolObjectsSetting.FirstOrDefault(p=> p.Type == type);
                 //safety check
-                if(poolObjectSetep == null)
+                if(poolObjectSetep?.Prefab == null)
                 {
                     return null;
                 }

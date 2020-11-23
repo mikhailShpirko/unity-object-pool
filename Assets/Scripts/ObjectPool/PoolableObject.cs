@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+Source: https://github.com/mikhailShpirko/unity-object-pool
+Component: ObjectPool/PoolableObject.cs
+
+The object is to be used by Pool. The object will return itself to pool when disabled.
+
+MIT License
+Copyright (c) 2020 Mikhail Shpirko
+*/
+
+using System;
 using UnityEngine;
 
 namespace ObjectPool
