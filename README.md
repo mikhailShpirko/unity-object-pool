@@ -20,8 +20,8 @@ The solution includes interactive demo of the pattern. Open Assets/Scenes/Demo t
    2. Configure Pool Object Settings of the script component
       1. Set number of poolable object types to be used
       2. Set number of instances to create for each poolable object type
-      3. Select Type for each opoolable bject type
-      4. Attach prefab or object each poolable object type
+      3. Select Type for each poolable bject type
+      4. Attach prefab of an object for each poolable object type
 
 ## Usage
 Use function GetFromPool of Pool component to retrieve object from pool.
