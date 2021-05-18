@@ -89,13 +89,13 @@ namespace ObjectPool
             PoolableObject poolableObject;
             if(_objectPool[type].Count == 0)
             {
-                var poolObjectSetep = _poolObjectsSetting.FirstOrDefault(p=> p.Type == type);
+                var poolObjectSetup = _poolObjectsSetting.FirstOrDefault(p=> p.Type == type);
                 //safety check
-                if(poolObjectSetep?.Prefab == null)
+                if(poolObjectSetup?.Prefab == null)
                 {
                     return null;
                 }
-                poolableObject = InitializePoolableObject(poolObjectSetep.Prefab);
+                poolableObject = InitializePoolableObject(poolObjectSetup.Prefab);
             }
             else
             {
